@@ -1,4 +1,6 @@
 # USBHID-20-channel-ADC-with-Windows-GUI
+![Logo](Hardware/P1.png)
+
 1. Use EFM8UB10 make a 20-channel low speed oscilloscope.
 2. Open source, both hardware and software, hardware can buy from www.taobao.com
 3. VOL_monitor.png is screen capture of Vol_Monitor-WinGUI. It supports 12-Channels due to display colors. You can change it freely to make your own new tool.
