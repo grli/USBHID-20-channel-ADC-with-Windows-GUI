@@ -1,0 +1,316 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 VolMointor"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "VolMointor 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_VolMointor_DIALOG DIALOGEX 0, 0, 492, 312
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_DEVICELIST,3,14,64,51,CBS_DROPDOWN | CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "CH0",IDC_BATCHECK1,190,13,19,13
+    PUSHBUTTON      "CH1",IDC_BATCHECK2,190,28,19,13,NOT WS_TABSTOP
+    PUSHBUTTON      "CH2",IDC_BATCHECK3,212,13,19,13,NOT WS_TABSTOP
+    PUSHBUTTON      "CH3",IDC_BATCHECK4,212,28,19,13,NOT WS_TABSTOP
+    CONTROL         "连接",IDC_CONNECT,"Button",BS_OWNERDRAW,71,13,26,25
+    CONTROL         "保存",IDC_EXPORT,"Button",BS_OWNERDRAW,129,13,26,25
+    CONTROL         "加载",IDC_IMPORT,"Button",BS_OWNERDRAW,158,13,26,25
+    CONTROL         "",IDC_MINIMIZE,"Button",BS_OWNERDRAW,452,0,12,14
+    CONTROL         "",IDC_MAXIMIZE,"Button",BS_OWNERDRAW,465,0,12,14
+    CONTROL         "",ID_APP_EXIT,"Button",BS_OWNERDRAW,478,0,12,14
+    CONTROL         "暂停",IDC_RECORD,"Button",BS_OWNERDRAW,100,13,26,25
+    PUSHBUTTON      "",IDC_IDLE,0,58,6,6,NOT WS_VISIBLE | NOT WS_TABSTOP
+    CONTROL         "设置",IDC_OPTION,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | WS_DISABLED,441,119,26,25
+    PUSHBUTTON      "Upgrade",IDC_UPGRADE,351,16,33,20,NOT WS_TABSTOP
+    PUSHBUTTON      "CH4",IDC_BATCHECK5,234,13,19,13,NOT WS_TABSTOP
+    PUSHBUTTON      "CH5",IDC_BATCHECK6,234,28,19,13,NOT WS_TABSTOP
+    PUSHBUTTON      "CH6",IDC_BATCHECK7,256,13,19,13,NOT WS_TABSTOP
+    PUSHBUTTON      "CH7",IDC_BATCHECK8,256,28,19,13,NOT WS_TABSTOP
+    PUSHBUTTON      "==",IDC_VOLTAGE_CURSOR,331,11,15,15,NOT WS_TABSTOP
+    PUSHBUTTON      "||",IDC_TIME_CURSOR,331,26,15,15,NOT WS_TABSTOP
+    COMBOBOX        IDC_SAMPLE_RATE,3,29,64,116,CBS_DROPDOWN | CBS_DISABLENOSCROLL | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "CH8",IDC_BATCHECK9,278,13,19,13,NOT WS_TABSTOP
+    PUSHBUTTON      "CH9",IDC_BATCHECK10,278,28,19,13,NOT WS_TABSTOP
+    PUSHBUTTON      "CH10",IDC_BATCHECK11,300,13,23,13,NOT WS_TABSTOP
+    PUSHBUTTON      "CH11",IDC_BATCHECK12,300,28,23,13,NOT WS_TABSTOP
+    PUSHBUTTON      "Help",IDC_HELP1,385,16,30,20
+    EDITTEXT        IDC_EDIT_VOL,427,20,26,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "VDD(mV)",IDC_BUTTON_APPLY,453,18,37,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "Free to use"
+            VALUE "FileDescription", "USB Battery monitor."
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "VolMointor.exe"
+            VALUE "LegalCopyright", "Free to use."
+            VALUE "OriginalFilename", "VolMointor.exe"
+            VALUE "ProductName", "USB Battery monitor"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_VolMointor_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 491
+        BOTTOMMARGIN, 311
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 VolMointor(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) (unknown sub-lang: 0x12) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENE)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, 0x12
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROGRESS DIALOGEX 0, 0, 436, 28
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,7,422,14
+END
+
+IDD_CHANNEL_SETUP DIALOGEX 0, 0, 236, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Channel setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,123,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,62,180,50,14
+    LTEXT           "Channel 0",IDC_STATIC,12,20,33,8
+    EDITTEXT        IDC_EDIT_CH0,50,16,80,14,ES_AUTOHSCROLL
+    LTEXT           "Channel 1",IDC_STATIC,12,40,33,8
+    EDITTEXT        IDC_EDIT_CH1,50,36,80,14,ES_AUTOHSCROLL
+    LTEXT           "Channel 2",IDC_STATIC,12,60,33,8
+    EDITTEXT        IDC_EDIT_CH2,50,56,80,14,ES_AUTOHSCROLL
+    LTEXT           "Channel 3",IDC_STATIC,12,79,33,8
+    EDITTEXT        IDC_EDIT_CH3,50,76,80,14,ES_AUTOHSCROLL
+    LTEXT           "Channel 4",IDC_STATIC,12,101,33,8
+    EDITTEXT        IDC_EDIT_CH4,50,97,80,14,ES_AUTOHSCROLL
+    LTEXT           "Channel 5",IDC_STATIC,12,120,33,8
+    EDITTEXT        IDC_EDIT_CH5,50,117,80,14,ES_AUTOHSCROLL
+    LTEXT           "Channel 6",IDC_STATIC,12,141,33,8
+    EDITTEXT        IDC_EDIT_CH6,50,137,80,14,ES_AUTOHSCROLL
+    LTEXT           "Channel 7",IDC_STATIC,12,160,33,8
+    EDITTEXT        IDC_EDIT_CH7,50,157,80,14,ES_AUTOHSCROLL
+    LTEXT           "Positive",IDC_STATIC,139,5,26,8
+    LTEXT           "Negative",IDC_STATIC,186,5,30,8
+    COMBOBOX        IDC_COMBO_POS_0,137,17,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NEG_0,185,17,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POS_1,137,37,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NEG_1,185,37,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POS_2,137,57,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NEG_2,185,57,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POS_3,137,77,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NEG_3,185,77,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POS_4,137,97,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NEG_4,185,97,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POS_5,137,117,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NEG_5,185,117,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POS_6,137,137,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NEG_6,185,137,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POS_7,137,157,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NEG_7,185,157,41,180,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+
+    IDD_CHANNEL_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\VolMointor.rc2""  // ?????????§??????????§???? Microsoft Visual C++ ?????????ì??????????¨?????????¨???????????¨????????????§??????????§????-|????????ì??????????????ì??????????¨???|????????¨????o???\r\n"
+    "#include ""afxres.rc""     // ?????????ì??????????¨?????????¨???????????¨????o?????????ì??????????¨???|??????????ì??????????¨???|????????¨????|?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VolMointor.ico"
+#endif    // English (U.S.) (unknown sub-lang: 0x12) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\VolMointor.rc2"  // ??????????ì???????????ì???? Microsoft Visual C++ ?????????¨????????????§??????????§????????????§?????????????ì???????????ì????-|????????¨???????????????¨????????????§???|?????????§????o???
+#include "afxres.rc"     // ?????????¨????????????§??????????§????????????§????o?????????¨????????????§???|??????????¨????????????§???|?????????§????|?t
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
